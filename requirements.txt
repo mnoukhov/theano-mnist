@@ -1,0 +1,5 @@
+theano
+lasagne
+blocks
+fuel
+argh

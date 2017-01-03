@@ -6,7 +6,7 @@ from fuel.streams import DataStream
 class Dataset(object):
     def __init__(self, batch_size):
         self.batch_size = batch_size
-        self.dataset = MNIST('train')
+        self.dataset = MNIST(['train'])
         self.images_shape = self.dataset.source_shapes[0]
 
     def get_data_stream(self):

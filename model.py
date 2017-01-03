@@ -5,10 +5,10 @@ from theano import tensor as T
 
 
 class Model(object):
-    def __init__(self, input_shape):
+    def __init__(self, batch_size):
         self.images = T.tensor4('features')
         self.labels = T.ivector('targets')
-        self.network = lenet(*input_shape)
+        self.network = lenet(batch_size, 28, 28, 3)
         self.predictions = L.get_output(self.network, inputs=self.images)
 
     def get_loss(self):

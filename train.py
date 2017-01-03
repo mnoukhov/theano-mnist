@@ -1,4 +1,5 @@
 import argh
+from argh import arg
 from blocks.algorithms import GradientDescent, Scale
 from blocks.extensions import FinishAfter, Printing, ProgressBar, Timing
 from blocks.extensions.monitoring import TrainingDataMonitoring
@@ -8,11 +9,16 @@ from dataset import Dataset
 from model import Model
 
 
+@arg('batch_size', type=int)
+@arg('learning_rate', type=float)
+@arg('num_epochs', type=int)
 def train(batch_size, learning_rate, num_epochs):
     dataset = Dataset(batch_size)
     data_stream = dataset.get_data_stream()
 
-    model = Model(dataset.images_shape)
+    import pdb
+    pdb.set_trace()
+    model = Model(batch_size)
     loss = model.get_loss()
     params = model.get_all_params()
 

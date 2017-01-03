@@ -5,10 +5,10 @@ Uses fuel (data processing), blocks (main loop), and lasagne (model definition) 
 
 
 ## install requirements
-install [latest theano](http://deeplearning.net/software/theano/install.html#bleeding-edge-install-instructions)
-install [latest blocks (and fuel)](http://blocks.readthedocs.io/en/latest/setup.html)
-install [latest lasagne](http://lasagne.readthedocs.io/en/latest/user/installation.html#bleeding-edge-version)
-install argh: `pip install argh`
+* install [latest theano](http://deeplearning.net/software/theano/install.html#bleeding-edge-install-instructions)
+* install [latest blocks (and fuel)](http://blocks.readthedocs.io/en/latest/setup.html)
+* install [latest lasagne](http://lasagne.readthedocs.io/en/latest/user/installation.html#bleeding-edge-version)
+* install argh: `pip install argh`
 
 ## prep data
 follow [this guide](http://fuel.readthedocs.io/en/latest/built_in_datasets.html) to download and create `mnist.hdf5`
